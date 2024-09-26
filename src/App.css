@@ -1,0 +1,111 @@
+#root {
+
+  max-width: 100%;
+
+  height: 100vh;
+
+  margin: 0 auto;
+
+  background-size: cover;
+
+  background-image: url('/moves/background.png');
+
+  background-position: center;
+
+}
+
+
+.body {
+
+  max-width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+}
+
+
+.area {
+
+  width: 400px;
+
+  height: 200px;
+
+  background-image: url('/moves/area.png');
+
+  background-position: center;
+
+  background-size: cover;
+
+  position: absolute;
+
+  bottom: 120px; 
+
+  z-index: 1;
+
+  
+
+}
+
+
+.player {
+
+  width: 120px;
+
+  height: 130px;
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  position: absolute;
+
+  top: 230px;
+
+  z-index: 2;
+  
+  /* border: 1px solid white; */
+
+  margin-bottom: 0;
+
+  margin: 0;
+}
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+  
+}
+
+.hp-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.hp {
+  height: 100%;
+  background-color: rgb(24, 172, 75);
+  transition: width 0.3s ease;
+}
